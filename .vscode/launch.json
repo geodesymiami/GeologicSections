@@ -1,0 +1,24 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Run map_and_logs.py (test data)",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/map_and_logs.py",
+            "cwd": "${workspaceFolder}",
+            "console": "integratedTerminal",
+            "args": [
+                "--intervals-folder", "test_data/spt_int",
+                "--locations", "test_data/boring_locations_with_elevation.csv",
+                "--pattern-dir", "test_data/patterns/usgs_lithology_patterns/png",
+                "--outdir", "out_10",
+                "--spt-mode", "track"
+            ],
+            "justMyCode": true
+        }
+    ]
+}
