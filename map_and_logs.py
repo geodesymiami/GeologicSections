@@ -973,7 +973,7 @@ def main():
     ap.add_argument("--ymin-ft", type=float, default=0.0, help="Minimum depth (ft)")
     ap.add_argument("--ymax-ft", type=float, default=200.0, help="Maximum depth (ft)")
     ap.add_argument("--legend-frac", type=float, default=0.55,
-                    help="Legend column width as a fraction of section width (0.55 means 55%)")
+                    help="Legend column width as a fraction of section width (0.55 means 55%%)")
     args = ap.parse_args()
 
     run(args.intervals_folder, args.locations, args.pattern_dir, args.outdir,
